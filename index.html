@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validacion</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<main>
+        <h1>VALIDACIÓN</h1>
+		<form action="" class="formulario" id="formulario">
+			<!--Nombre -->
+			<div class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre y Apellido</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ingrese Nombre Completo">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Caracteres no validos</p>
+			</div>
+
+			<!-- DNI -->
+			<div class="formulario__grupo" id="grupo__dni">
+				<label for="dni" class="formulario__label">N° de documento</label>
+				<div class="formulario__grupo-input">
+					<input type="number" class="formulario__input" name="dni" id="dni" placeholder="Ingrese su DNI">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Es necesario N° de pasaporte</p>
+			</div>
+
+            <!-- Teléfono -->
+			<div class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label">Teléfono</label>
+				<div class="formulario__grupo-input">
+					<input type="number" class="formulario__input" name="telefono" id="telefono" placeholder="Telefono">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">El telefono solo puede contener numeros</p>
+			</div>
+
+			<!-- Pasajeros -->
+			<div class="formulario__grupo" id="grupo__pasajeros">
+				<label for="pasajeros" class="formulario__label">Pasajeros</label>
+				<div class="formulario__grupo-input">
+					<input type="number" class="formulario__input" name="pasajeros" id="pasajeros" placeholder="Numero de pasajeros">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Indique el numero de pasajeros</p>
+			</div>
+
+			<!-- Noches -->
+			<div class="formulario__grupo" id="grupo__noches">
+				<label for="noches" class="formulario__label">Noches</label>
+				<div class="formulario__grupo-input">
+					<input type="number" class="formulario__input" name="noches" id="noches" placeholder="Numero de noches">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Indique cuantas noches desea alojarse</p>
+			</div>
+
+			<!-- Mes -->
+			<div class="formulario__grupo" id="grupo__mes">
+				<label for="mes" class="formulario__label">Mes</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="mes" id="mes" placeholder="Ingrese el Mes">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Indique el mes</p>
+			</div>
+
+
+            <!-- Clase -->
+
+            <div class="formulario__grupo" id="grupo__clase">
+				<label for="clase" class="formulario__label">Clase</label>
+				<div class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="clase" id="clase" placeholder="Estandar, Ejecutiva, Business">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</div>
+				<p class="formulario__input-error">Por favór rellene el campo</p>
+			</div>
+
+			<!-- Terminos y Condiciones -->
+			<div class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</div>
+
+			<div class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
+			</div>
+
+			<div class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</div>
+		</form>
+	</main>
+
+	<script src="js/main.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+</html>
