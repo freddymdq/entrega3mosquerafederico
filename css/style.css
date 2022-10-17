@@ -3,6 +3,14 @@
 	box-sizing: border-box;
 }
 
+
+.card{
+	border: 1px solid black;
+	padding: 25px;
+	display: grid;
+	gap: 10px;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
     background: #014979;

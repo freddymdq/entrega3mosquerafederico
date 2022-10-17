@@ -99,7 +99,7 @@ formulario.addEventListener('submit', (e) => {
 
     const  terminos = document.getElementById('terminos');
     if(items.nombre && items.dni  && items.telefono && items.mes && items.pasajeros && items.noches && items.clase && terminos.checked ){
-        formulario.reset();
+        document.location.href="./reserva.html"
 
         document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo')
         setTimeout(()=>{// booramoos toodoss  mensaajess de exito
